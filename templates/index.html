@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Home page{% endblock %}
+{% block content %}
+<p>{{content}}</p>
+{% for x in range(10) %}
+    {% if x % 2 == 1 %}  <!-- can also do elif and else -->
+        <p>{{x}}</p>
+    {% endif %}
+{% endfor %}
+
+<p>{{content2[0]}}</p>  <!-- loop through array via "for x in content2" -->
+{% endblock %}
